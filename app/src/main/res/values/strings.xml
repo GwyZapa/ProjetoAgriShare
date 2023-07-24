@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">GlobalSolution_1.0</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="agri">AGRI</string>
+    <string name="share">SHARE</string>
+    <string name="welcomeMessage">Welcome User! \nTo make the most of Agrishare\'s services, we encourage you to create a profile. By doing so, We the AI can better understand your preferences and pair you with suitable farmers.\n\nTo create your profile, click on the \'Sign In\' button below.\n</string>
+    <string name="sign_inBtn">SIGN IN</string>
+    <string name="homeNav">Home</string>
+    <string name="forumsNav">Forums</string>
+    <string name="shareNav">Share</string>
+    <string name="editTextForumPost">what do you want to ask?</string>
+    <string name="contactBtn">CONTACT</string>
+    <string name="forum_content2">What is the best way to farm for optimal productivity and sustainability?</string>
+    <string name="forum_title2">Best way to Farm?</string>
+    <string name="forum_name2">Hugo Stiller</string>
+    <string name="forum_name1">Anya Barrington</string>
+    <string name="forum_title1">Is wheat hazardous?</string>
+    <string name="forum_content1">Is wheat hazardous to human health or the environment?</string>
+    <string name="share_product1">Sheep</string>
+    <string name="share_name1">Barry Ranton</string>
+    <string name="share_qtd1">1 flock</string>
+    <string name="share_product2">Varied vegetables</string>
+    <string name="share_qtd2">1 Ton</string>
+    <string name="share_name2">Jenna Rutabeaga</string>
+    <string name="share_product3">Rye</string>
+    <string name="share_qtd3">2 Tons</string>
+    <string name="share_name3">Josh Kerry</string>
+    <string name="share_activity_textView">Here you can create a new offer for surpluce products from your farm</string>
+    <string name="product_nameActivityShare">PRODUCT NAME</string>
+    <string name="product_qtdActivityShare">QUANTITY</string>
+    <string name="saveBtn_ActivityShare">Save</string>
+    <string name="loginact_textView">Hello! Welcome to the Sign In Area, please tell us your name!</string>
+    <string name="usernameAct">Username</string>
+
+</resources>

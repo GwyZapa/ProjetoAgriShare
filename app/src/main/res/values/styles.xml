@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+<!--        <item name="android:layout_marginBottom">60dp</item>-->
+    </style>
+
+    <style name="agri">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">50dp</item>
+    </style>
+
+    <style name="share">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">60dp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">50dp</item>
+    </style>
+
+    <style name="smallAgri">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="smallShare">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="lupaHeader">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+
+
+    <style name="agrupamentoShare">
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/dummyg</item>
+        <item name="android:elevation">12dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="Header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">?attr/colorOnPrimaryContainer</item>
+    </style>
+
+    <style name="textViews">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18dp</item>
+
+    </style>
+
+    <style name="background">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?attr/colorOnBackground</item>
+    </style>
+
+
+    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">?attr/colorPrimary</item>v
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="itemIconTint">?attr/colorOnPrimary</item>
+        <item name="itemTextColor">?attr/colorOnPrimary</item>
+
+        <item name="android:itemBackground">?attr/colorOnPrimaryContainer</item>
+
+    </style>
+
+    <style name="delete">
+
+        <item name="android:background">?android:attr/windowBackground</item>
+    </style>
+
+    <style name="fab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:background">@drawable/faboutline</item>
+        <item name="android:backgroundTint">?attr/colorOnTertiaryContainer</item>
+<!--        <item name="android:foreground">@drawable/faboutline</item> &lt;!&ndash; Add this line &ndash;&gt;-->
+        <item name="android:contentDescription">submit</item>
+
+            <!-- Add the following lines -->
+<!--            <item name="android:backgroundTint">@color/transparent</item>-->
+            <item name="android:foreground">@drawable/faboutline</item>
+
+
+    </style>
+
+
+
+
+
+</resources>

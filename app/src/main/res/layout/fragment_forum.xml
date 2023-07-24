@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background"
+    tools:context=".fragments.ForumFragment">
+
+    <View
+        android:id="@+id/view"
+        style="@style/Header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </View>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/AGRI"
+            style="@style/smallAgri"
+            android:text="@string/agri"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/LUPA"
+            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.509"></TextView>
+
+        <TextView
+            android:id="@+id/SHARE"
+            style="@style/smallShare"
+            android:text="@string/share"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/LUPA"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/AGRI"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.509"></TextView>
+
+        <ImageView
+            android:id="@+id/LUPA"
+            style="@style/lupaHeader"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.535"
+            app:srcCompat="@drawable/baseline_search"
+            app:tint="#FFFF" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- //////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////-->
+    <!--    POST    -->
+    <!-- //////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/agrupamentoPost"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/editText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <EditText
+            android:id="@+id/editText"
+            style="@style/textViews"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/editTextForumPost"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnPost"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:text=">"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white">
+
+        </Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- //////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////-->
+    <!--    1    -->
+    <!-- //////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/agrupamento1"
+
+        style="@style/agrupamentoShare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agrupamentoPost">
+
+
+        <ImageView
+            android:id="@+id/icone1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/TESTETITULO"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/boy" />
+
+        <TextView
+            android:id="@+id/TESTENOME"
+
+            style="@style/textViews"
+            android:text="PLACEHOLDER NAME"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/icone1"
+            app:layout_constraintStart_toEndOf="@+id/icone1"
+            app:layout_constraintTop_toTopOf="@+id/icone1"></TextView>
+
+        <TextView
+            android:id="@+id/TESTETITULO"
+            style="@style/textViews"
+            android:text="PLACEHOLDER TITLE"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/TESTECONTEUDO"
+
+
+            app:layout_constraintEnd_toEndOf="@+id/TESTENOME"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/TESTECONTEUDO"
+            style="@style/textViews"
+            android:layout_marginBottom="36dp"
+            android:text="placeholder content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <ImageView
+            android:id="@+id/dislike1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TESTECONTEUDO"
+            app:srcCompat="@drawable/baseline_thumb_down"
+            app:tint="?attr/colorSecondary" />
+
+        <ImageView
+            android:id="@+id/commment1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/dislike1"
+            app:layout_constraintEnd_toStartOf="@+id/like1"
+            app:layout_constraintStart_toEndOf="@+id/dislike1"
+            app:layout_constraintTop_toTopOf="@+id/dislike1"
+            app:srcCompat="@drawable/baseline_comment"
+            app:tint="?attr/colorPrimary" />
+
+
+        <ImageView
+            android:id="@+id/like1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/commment1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/commment1"
+
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/baseline_thumb_up"
+            app:tint="?attr/colorPrimaryContainer" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- //////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////-->
+    <!--    2    -->
+    <!-- //////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/agrupamento2"
+
+        style="@style/agrupamentoShare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agrupamento1">
+
+        <ImageView
+            android:id="@+id/icone2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/TESTETITULO2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/girl" />
+
+        <TextView
+            android:id="@+id/TESTENOME2"
+            style="@style/textViews"
+            android:text="@string/forum_name1"
+
+
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/icone2"
+            app:layout_constraintStart_toEndOf="@+id/icone2"
+            app:layout_constraintTop_toTopOf="@+id/icone2"></TextView>
+
+        <TextView
+            android:id="@+id/TESTETITULO2"
+            style="@style/textViews"
+            android:text="@string/forum_title1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/TESTECONTEUDO2"
+            app:layout_constraintEnd_toEndOf="@+id/TESTENOME2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/TESTECONTEUDO2"
+            style="@style/textViews"
+
+            android:layout_marginBottom="36dp"
+            android:text="@string/forum_content1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <ImageView
+            android:id="@+id/dislike2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TESTECONTEUDO2"
+            app:srcCompat="@drawable/baseline_thumb_down"
+            app:tint="?attr/colorSecondary" />
+
+        <ImageView
+            android:id="@+id/commment2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/dislike2"
+            app:layout_constraintEnd_toStartOf="@+id/like2"
+            app:layout_constraintStart_toEndOf="@+id/dislike2"
+            app:layout_constraintTop_toTopOf="@+id/dislike2"
+            app:srcCompat="@drawable/baseline_comment"
+            app:tint="?attr/colorPrimary" />
+
+
+        <ImageView
+            android:id="@+id/like2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/commment2"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="@+id/commment2"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/baseline_thumb_up"
+            app:tint="?attr/colorPrimaryContainer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- //////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////-->
+    <!--    3    -->
+    <!-- //////////////////////////////////////////////////////////-->
+    <!-- //////////////////////////////////////////////////////////-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/agrupamento3"
+        style="@style/agrupamentoShare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agrupamento2">
+
+        <ImageView
+            android:id="@+id/icone3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/TESTETITULO3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bussiness" />
+
+        <TextView
+            android:id="@+id/TESTENOME3"
+            style="@style/textViews"
+            android:text="@string/forum_name2"
+
+
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/icone3"
+            app:layout_constraintStart_toEndOf="@+id/icone3"
+            app:layout_constraintTop_toTopOf="@+id/icone3"></TextView>
+
+        <TextView
+            android:id="@+id/TESTETITULO3"
+            style="@style/textViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forum_title2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/TESTECONTEUDO3"
+            app:layout_constraintEnd_toEndOf="@+id/TESTENOME3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/TESTECONTEUDO3"
+            style="@style/textViews"
+
+            android:layout_marginBottom="36dp"
+            android:text="@string/forum_content2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <ImageView
+            android:id="@+id/dislike3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TESTECONTEUDO3"
+            app:srcCompat="@drawable/baseline_thumb_down"
+            app:tint="?attr/colorSecondary" />
+
+        <ImageView
+            android:id="@+id/commment3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/dislike3"
+            app:layout_constraintEnd_toStartOf="@+id/like3"
+            app:layout_constraintStart_toEndOf="@+id/dislike3"
+            app:layout_constraintTop_toTopOf="@+id/dislike3"
+            app:srcCompat="@drawable/baseline_comment"
+            app:tint="?attr/colorPrimary" />
+
+
+        <ImageView
+            android:id="@+id/like3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/commment3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/commment3"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/baseline_thumb_up"
+            app:tint="?attr/colorPrimaryContainer" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

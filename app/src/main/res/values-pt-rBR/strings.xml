@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">GlobalSolution_1.0</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="agri">AGRI</string>
+    <string name="share">SHARE</string>
+    <string name="welcomeMessage">Bem-vindo(a), Usuário(a)! \nPara aproveitar ao máximo os serviços do Agrishare, encorajamos você a criar um perfil. Ao fazer isso, nós, a IA, podemos entender melhor suas preferências e conectá-lo(a) a agricultores adequados.\n\nPara criar seu perfil, clique no botão "Entrar" abaixo.\n</string>
+    <string name="sign_inBtn">ENTRAR</string>
+    <string name="homeNav">Início</string>
+    <string name="forumsNav">Fóruns</string>
+    <string name="shareNav">Compartilhar</string>
+    <string name="editTextForumPost">O que você deseja perguntar?</string>
+    <string name="contactBtn">CONTATO</string>
+    <string name="forum_content2">Qual é a melhor maneira de agriculturar obtendo produtividade e sustentabilidade?</string>
+    <string name="forum_title2">Melhor maneira de agriculturar?</string>
+    <string name="forum_name2">João Silva</string>
+    <string name="forum_name1">Maria Santos</string>
+    <string name="forum_title1">O trigo é perigoso?</string>
+    <string name="forum_content1">O trigo representa perigo para a saúde humana ou o meio ambiente?</string>
+    <string name="share_product1">Ovelhas</string>
+    <string name="share_name1">Pedro Oliveira</string>
+    <string name="share_qtd1">1 rebanho</string>
+    <string name="share_product2">Vegetais variados</string>
+    <string name="share_qtd2">1 tonelada</string>
+    <string name="share_name2">Ana Souza</string>
+    <string name="share_product3">Centeio</string>
+    <string name="share_qtd3">2 toneladas</string>
+    <string name="share_name3">Carlos Pereira</string>
+    <string name="share_activity_textView">Aqui você pode criar uma nova oferta para produtos excedentes da sua fazenda</string>
+    <string name="product_nameActivityShare">NOME DO PRODUTO</string>
+    <string name="product_qtdActivityShare">QUANTIDADE</string>
+    <string name="saveBtn_ActivityShare">Salvar</string>
+    <string name="loginact_textView">Olá! Bem-vindo(a) à Área de Login. Por favor, informe seu nome!</string>
+    <string name="usernameAct">Nome de usuário</string>
+
+
+
+</resources>
